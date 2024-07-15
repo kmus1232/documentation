@@ -97910,7 +97910,8 @@
                             "anomaly_detection",
                             "impossible_travel",
                             "hardcoded",
-                            "third_party"
+                            "third_party",
+                            "anomaly_threshold"
                           ],
                           "type": "string",
                           "x-enum-varnames": [
@@ -97919,7 +97920,8 @@
                             "ANOMALY_DETECTION",
                             "IMPOSSIBLE_TRAVEL",
                             "HARDCODED",
-                            "THIRD_PARTY"
+                            "THIRD_PARTY",
+                            "ANOMALY_THRESHOLD"
                           ]
                         },
                         "evaluationWindow": {
@@ -98500,7 +98502,8 @@
                             "anomaly_detection",
                             "impossible_travel",
                             "hardcoded",
-                            "third_party"
+                            "third_party",
+                            "anomaly_threshold"
                           ],
                           "type": "string",
                           "x-enum-varnames": [
@@ -98509,7 +98512,8 @@
                             "ANOMALY_DETECTION",
                             "IMPOSSIBLE_TRAVEL",
                             "HARDCODED",
-                            "THIRD_PARTY"
+                            "THIRD_PARTY",
+                            "ANOMALY_THRESHOLD"
                           ]
                         },
                         "evaluationWindow": {
@@ -99142,7 +99146,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -99151,7 +99156,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -99716,7 +99722,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -99725,7 +99732,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -100242,7 +100250,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -100251,7 +100260,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -100816,7 +100826,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -100825,7 +100836,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -101386,7 +101398,8 @@
           "anomaly_detection",
           "impossible_travel",
           "hardcoded",
-          "third_party"
+          "third_party",
+          "anomaly_threshold"
         ],
         "type": "string",
         "x-enum-varnames": [
@@ -101395,7 +101408,8 @@
           "ANOMALY_DETECTION",
           "IMPOSSIBLE_TRAVEL",
           "HARDCODED",
-          "THIRD_PARTY"
+          "THIRD_PARTY",
+          "ANOMALY_THRESHOLD"
         ]
       },
       "SecurityMonitoringRuleEvaluationWindow": {
@@ -101703,7 +101717,8 @@
               "anomaly_detection",
               "impossible_travel",
               "hardcoded",
-              "third_party"
+              "third_party",
+              "anomaly_threshold"
             ],
             "type": "string",
             "x-enum-varnames": [
@@ -101712,7 +101727,8 @@
               "ANOMALY_DETECTION",
               "IMPOSSIBLE_TRAVEL",
               "HARDCODED",
-              "THIRD_PARTY"
+              "THIRD_PARTY",
+              "ANOMALY_THRESHOLD"
             ]
           },
           "evaluationWindow": {
@@ -102426,7 +102442,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -102435,7 +102452,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -103016,7 +103034,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -103025,7 +103044,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -103565,7 +103585,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -103574,7 +103595,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -104143,7 +104165,8 @@
                           "anomaly_detection",
                           "impossible_travel",
                           "hardcoded",
-                          "third_party"
+                          "third_party",
+                          "anomaly_threshold"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
@@ -104152,7 +104175,8 @@
                           "ANOMALY_DETECTION",
                           "IMPOSSIBLE_TRAVEL",
                           "HARDCODED",
-                          "THIRD_PARTY"
+                          "THIRD_PARTY",
+                          "ANOMALY_THRESHOLD"
                         ]
                       },
                       "evaluationWindow": {
@@ -104912,7 +104936,8 @@
                   "anomaly_detection",
                   "impossible_travel",
                   "hardcoded",
-                  "third_party"
+                  "third_party",
+                  "anomaly_threshold"
                 ],
                 "type": "string",
                 "x-enum-varnames": [
@@ -104921,7 +104946,8 @@
                   "ANOMALY_DETECTION",
                   "IMPOSSIBLE_TRAVEL",
                   "HARDCODED",
-                  "THIRD_PARTY"
+                  "THIRD_PARTY",
+                  "ANOMALY_THRESHOLD"
                 ]
               },
               "evaluationWindow": {
@@ -105535,7 +105561,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -105544,7 +105571,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -106109,7 +106137,8 @@
                       "anomaly_detection",
                       "impossible_travel",
                       "hardcoded",
-                      "third_party"
+                      "third_party",
+                      "anomaly_threshold"
                     ],
                     "type": "string",
                     "x-enum-varnames": [
@@ -106118,7 +106147,8 @@
                       "ANOMALY_DETECTION",
                       "IMPOSSIBLE_TRAVEL",
                       "HARDCODED",
-                      "THIRD_PARTY"
+                      "THIRD_PARTY",
+                      "ANOMALY_THRESHOLD"
                     ]
                   },
                   "evaluationWindow": {
@@ -107428,7 +107458,8 @@
                   "anomaly_detection",
                   "impossible_travel",
                   "hardcoded",
-                  "third_party"
+                  "third_party",
+                  "anomaly_threshold"
                 ],
                 "type": "string",
                 "x-enum-varnames": [
@@ -107437,7 +107468,8 @@
                   "ANOMALY_DETECTION",
                   "IMPOSSIBLE_TRAVEL",
                   "HARDCODED",
-                  "THIRD_PARTY"
+                  "THIRD_PARTY",
+                  "ANOMALY_THRESHOLD"
                 ]
               },
               "evaluationWindow": {
@@ -107939,7 +107971,8 @@
                   "anomaly_detection",
                   "impossible_travel",
                   "hardcoded",
-                  "third_party"
+                  "third_party",
+                  "anomaly_threshold"
                 ],
                 "type": "string",
                 "x-enum-varnames": [
@@ -107948,7 +107981,8 @@
                   "ANOMALY_DETECTION",
                   "IMPOSSIBLE_TRAVEL",
                   "HARDCODED",
-                  "THIRD_PARTY"
+                  "THIRD_PARTY",
+                  "ANOMALY_THRESHOLD"
                 ]
               },
               "evaluationWindow": {
@@ -108533,7 +108567,8 @@
                   "anomaly_detection",
                   "impossible_travel",
                   "hardcoded",
-                  "third_party"
+                  "third_party",
+                  "anomaly_threshold"
                 ],
                 "type": "string",
                 "x-enum-varnames": [
@@ -108542,7 +108577,8 @@
                   "ANOMALY_DETECTION",
                   "IMPOSSIBLE_TRAVEL",
                   "HARDCODED",
-                  "THIRD_PARTY"
+                  "THIRD_PARTY",
+                  "ANOMALY_THRESHOLD"
                 ]
               },
               "evaluationWindow": {
@@ -110119,7 +110155,8 @@
                   "anomaly_detection",
                   "impossible_travel",
                   "hardcoded",
-                  "third_party"
+                  "third_party",
+                  "anomaly_threshold"
                 ],
                 "type": "string",
                 "x-enum-varnames": [
@@ -110128,7 +110165,8 @@
                   "ANOMALY_DETECTION",
                   "IMPOSSIBLE_TRAVEL",
                   "HARDCODED",
-                  "THIRD_PARTY"
+                  "THIRD_PARTY",
+                  "ANOMALY_THRESHOLD"
                 ]
               },
               "evaluationWindow": {
@@ -110693,7 +110731,8 @@
                   "anomaly_detection",
                   "impossible_travel",
                   "hardcoded",
-                  "third_party"
+                  "third_party",
+                  "anomaly_threshold"
                 ],
                 "type": "string",
                 "x-enum-varnames": [
@@ -110702,7 +110741,8 @@
                   "ANOMALY_DETECTION",
                   "IMPOSSIBLE_TRAVEL",
                   "HARDCODED",
-                  "THIRD_PARTY"
+                  "THIRD_PARTY",
+                  "ANOMALY_THRESHOLD"
                 ]
               },
               "evaluationWindow": {
@@ -111403,7 +111443,8 @@
                   "anomaly_detection",
                   "impossible_travel",
                   "hardcoded",
-                  "third_party"
+                  "third_party",
+                  "anomaly_threshold"
                 ],
                 "type": "string",
                 "x-enum-varnames": [
@@ -111412,7 +111453,8 @@
                   "ANOMALY_DETECTION",
                   "IMPOSSIBLE_TRAVEL",
                   "HARDCODED",
-                  "THIRD_PARTY"
+                  "THIRD_PARTY",
+                  "ANOMALY_THRESHOLD"
                 ]
               },
               "evaluationWindow": {
@@ -111974,7 +112016,8 @@
                   "anomaly_detection",
                   "impossible_travel",
                   "hardcoded",
-                  "third_party"
+                  "third_party",
+                  "anomaly_threshold"
                 ],
                 "type": "string",
                 "x-enum-varnames": [
@@ -111983,7 +112026,8 @@
                   "ANOMALY_DETECTION",
                   "IMPOSSIBLE_TRAVEL",
                   "HARDCODED",
-                  "THIRD_PARTY"
+                  "THIRD_PARTY",
+                  "ANOMALY_THRESHOLD"
                 ]
               },
               "evaluationWindow": {
@@ -240142,7 +240186,8 @@
                                       "anomaly_detection",
                                       "impossible_travel",
                                       "hardcoded",
-                                      "third_party"
+                                      "third_party",
+                                      "anomaly_threshold"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
@@ -240151,7 +240196,8 @@
                                       "ANOMALY_DETECTION",
                                       "IMPOSSIBLE_TRAVEL",
                                       "HARDCODED",
-                                      "THIRD_PARTY"
+                                      "THIRD_PARTY",
+                                      "ANOMALY_THRESHOLD"
                                     ]
                                   },
                                   "evaluationWindow": {
@@ -240732,7 +240778,8 @@
                                       "anomaly_detection",
                                       "impossible_travel",
                                       "hardcoded",
-                                      "third_party"
+                                      "third_party",
+                                      "anomaly_threshold"
                                     ],
                                     "type": "string",
                                     "x-enum-varnames": [
@@ -240741,7 +240788,8 @@
                                       "ANOMALY_DETECTION",
                                       "IMPOSSIBLE_TRAVEL",
                                       "HARDCODED",
-                                      "THIRD_PARTY"
+                                      "THIRD_PARTY",
+                                      "ANOMALY_THRESHOLD"
                                     ]
                                   },
                                   "evaluationWindow": {
@@ -241370,7 +241418,8 @@
                               "anomaly_detection",
                               "impossible_travel",
                               "hardcoded",
-                              "third_party"
+                              "third_party",
+                              "anomaly_threshold"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
@@ -241379,7 +241428,8 @@
                               "ANOMALY_DETECTION",
                               "IMPOSSIBLE_TRAVEL",
                               "HARDCODED",
-                              "THIRD_PARTY"
+                              "THIRD_PARTY",
+                              "ANOMALY_THRESHOLD"
                             ]
                           },
                           "evaluationWindow": {
@@ -241944,7 +241994,8 @@
                               "anomaly_detection",
                               "impossible_travel",
                               "hardcoded",
-                              "third_party"
+                              "third_party",
+                              "anomaly_threshold"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
@@ -241953,7 +242004,8 @@
                               "ANOMALY_DETECTION",
                               "IMPOSSIBLE_TRAVEL",
                               "HARDCODED",
-                              "THIRD_PARTY"
+                              "THIRD_PARTY",
+                              "ANOMALY_THRESHOLD"
                             ]
                           },
                           "evaluationWindow": {
@@ -242730,7 +242782,8 @@
                                 "anomaly_detection",
                                 "impossible_travel",
                                 "hardcoded",
-                                "third_party"
+                                "third_party",
+                                "anomaly_threshold"
                               ],
                               "type": "string",
                               "x-enum-varnames": [
@@ -242739,7 +242792,8 @@
                                 "ANOMALY_DETECTION",
                                 "IMPOSSIBLE_TRAVEL",
                                 "HARDCODED",
-                                "THIRD_PARTY"
+                                "THIRD_PARTY",
+                                "ANOMALY_THRESHOLD"
                               ]
                             },
                             "evaluationWindow": {
@@ -243320,7 +243374,8 @@
                                 "anomaly_detection",
                                 "impossible_travel",
                                 "hardcoded",
-                                "third_party"
+                                "third_party",
+                                "anomaly_threshold"
                               ],
                               "type": "string",
                               "x-enum-varnames": [
@@ -243329,7 +243384,8 @@
                                 "ANOMALY_DETECTION",
                                 "IMPOSSIBLE_TRAVEL",
                                 "HARDCODED",
-                                "THIRD_PARTY"
+                                "THIRD_PARTY",
+                                "ANOMALY_THRESHOLD"
                               ]
                             },
                             "evaluationWindow": {
@@ -243995,7 +244051,8 @@
                               "anomaly_detection",
                               "impossible_travel",
                               "hardcoded",
-                              "third_party"
+                              "third_party",
+                              "anomaly_threshold"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
@@ -244004,7 +244061,8 @@
                               "ANOMALY_DETECTION",
                               "IMPOSSIBLE_TRAVEL",
                               "HARDCODED",
-                              "THIRD_PARTY"
+                              "THIRD_PARTY",
+                              "ANOMALY_THRESHOLD"
                             ]
                           },
                           "evaluationWindow": {
@@ -244569,7 +244627,8 @@
                               "anomaly_detection",
                               "impossible_travel",
                               "hardcoded",
-                              "third_party"
+                              "third_party",
+                              "anomaly_threshold"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
@@ -244578,7 +244637,8 @@
                               "ANOMALY_DETECTION",
                               "IMPOSSIBLE_TRAVEL",
                               "HARDCODED",
-                              "THIRD_PARTY"
+                              "THIRD_PARTY",
+                              "ANOMALY_THRESHOLD"
                             ]
                           },
                           "evaluationWindow": {
@@ -245266,7 +245326,8 @@
                                   "anomaly_detection",
                                   "impossible_travel",
                                   "hardcoded",
-                                  "third_party"
+                                  "third_party",
+                                  "anomaly_threshold"
                                 ],
                                 "type": "string",
                                 "x-enum-varnames": [
@@ -245275,7 +245336,8 @@
                                   "ANOMALY_DETECTION",
                                   "IMPOSSIBLE_TRAVEL",
                                   "HARDCODED",
-                                  "THIRD_PARTY"
+                                  "THIRD_PARTY",
+                                  "ANOMALY_THRESHOLD"
                                 ]
                               },
                               "evaluationWindow": {
@@ -246078,7 +246140,8 @@
                               "anomaly_detection",
                               "impossible_travel",
                               "hardcoded",
-                              "third_party"
+                              "third_party",
+                              "anomaly_threshold"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
@@ -246087,7 +246150,8 @@
                               "ANOMALY_DETECTION",
                               "IMPOSSIBLE_TRAVEL",
                               "HARDCODED",
-                              "THIRD_PARTY"
+                              "THIRD_PARTY",
+                              "ANOMALY_THRESHOLD"
                             ]
                           },
                           "evaluationWindow": {
@@ -246652,7 +246716,8 @@
                               "anomaly_detection",
                               "impossible_travel",
                               "hardcoded",
-                              "third_party"
+                              "third_party",
+                              "anomaly_threshold"
                             ],
                             "type": "string",
                             "x-enum-varnames": [
@@ -246661,7 +246726,8 @@
                               "ANOMALY_DETECTION",
                               "IMPOSSIBLE_TRAVEL",
                               "HARDCODED",
-                              "THIRD_PARTY"
+                              "THIRD_PARTY",
+                              "ANOMALY_THRESHOLD"
                             ]
                           },
                           "evaluationWindow": {
@@ -247669,7 +247735,8 @@
                                 "anomaly_detection",
                                 "impossible_travel",
                                 "hardcoded",
-                                "third_party"
+                                "third_party",
+                                "anomaly_threshold"
                               ],
                               "type": "string",
                               "x-enum-varnames": [
@@ -247678,7 +247745,8 @@
                                 "ANOMALY_DETECTION",
                                 "IMPOSSIBLE_TRAVEL",
                                 "HARDCODED",
-                                "THIRD_PARTY"
+                                "THIRD_PARTY",
+                                "ANOMALY_THRESHOLD"
                               ]
                             },
                             "evaluationWindow": {
@@ -248259,7 +248327,8 @@
                                 "anomaly_detection",
                                 "impossible_travel",
                                 "hardcoded",
-                                "third_party"
+                                "third_party",
+                                "anomaly_threshold"
                               ],
                               "type": "string",
                               "x-enum-varnames": [
@@ -248268,7 +248337,8 @@
                                 "ANOMALY_DETECTION",
                                 "IMPOSSIBLE_TRAVEL",
                                 "HARDCODED",
-                                "THIRD_PARTY"
+                                "THIRD_PARTY",
+                                "ANOMALY_THRESHOLD"
                               ]
                             },
                             "evaluationWindow": {
@@ -248903,7 +248973,8 @@
                           "anomaly_detection",
                           "impossible_travel",
                           "hardcoded",
-                          "third_party"
+                          "third_party",
+                          "anomaly_threshold"
                         ],
                         "type": "string",
                         "x-enum-varnames": [
@@ -248912,7 +248983,8 @@
                           "ANOMALY_DETECTION",
                           "IMPOSSIBLE_TRAVEL",
                           "HARDCODED",
-                          "THIRD_PARTY"
+                          "THIRD_PARTY",
+                          "ANOMALY_THRESHOLD"
                         ]
                       },
                       "evaluationWindow": {
@@ -249596,7 +249668,8 @@
                                 "anomaly_detection",
                                 "impossible_travel",
                                 "hardcoded",
-                                "third_party"
+                                "third_party",
+                                "anomaly_threshold"
                               ],
                               "type": "string",
                               "x-enum-varnames": [
@@ -249605,7 +249678,8 @@
                                 "ANOMALY_DETECTION",
                                 "IMPOSSIBLE_TRAVEL",
                                 "HARDCODED",
-                                "THIRD_PARTY"
+                                "THIRD_PARTY",
+                                "ANOMALY_THRESHOLD"
                               ]
                             },
                             "evaluationWindow": {
@@ -250186,7 +250260,8 @@
                                 "anomaly_detection",
                                 "impossible_travel",
                                 "hardcoded",
-                                "third_party"
+                                "third_party",
+                                "anomaly_threshold"
                               ],
                               "type": "string",
                               "x-enum-varnames": [
@@ -250195,7 +250270,8 @@
                                 "ANOMALY_DETECTION",
                                 "IMPOSSIBLE_TRAVEL",
                                 "HARDCODED",
-                                "THIRD_PARTY"
+                                "THIRD_PARTY",
+                                "ANOMALY_THRESHOLD"
                               ]
                             },
                             "evaluationWindow": {
@@ -251045,7 +251121,8 @@
                                   "anomaly_detection",
                                   "impossible_travel",
                                   "hardcoded",
-                                  "third_party"
+                                  "third_party",
+                                  "anomaly_threshold"
                                 ],
                                 "type": "string",
                                 "x-enum-varnames": [
@@ -251054,7 +251131,8 @@
                                   "ANOMALY_DETECTION",
                                   "IMPOSSIBLE_TRAVEL",
                                   "HARDCODED",
-                                  "THIRD_PARTY"
+                                  "THIRD_PARTY",
+                                  "ANOMALY_THRESHOLD"
                                 ]
                               },
                               "evaluationWindow": {
