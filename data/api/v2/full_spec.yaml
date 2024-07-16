@@ -39483,6 +39483,8 @@ paths:
     /api/v2/usage/lambda_traced_invocations: true
     /api/v2/usage/observability_pipelines: true
     /api/v2/usage/projected_cost: true
+  x-test:
+    /api/v2/apicatalog/api: true
 security:
 - apiKeyAuth: []
   appKeyAuth: []
