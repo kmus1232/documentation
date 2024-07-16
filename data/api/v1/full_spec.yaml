@@ -28130,8 +28130,6 @@ paths:
 
         - custom: `service check`
 
-        - event: `event alert`
-
         - forecast: `query alert`
 
         - host: `service check`
