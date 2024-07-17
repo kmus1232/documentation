@@ -1491,13 +1491,15 @@
           },
           "modified_by": {
             "description": "Relationship to user.",
+            "nullable": true,
             "properties": {
               "data": {
                 "description": "Relationship to user object.",
+                "nullable": true,
                 "properties": {
                   "id": {
                     "description": "A unique identifier that represents the user.",
-                    "example": "00000000-0000-0000-2345-000000000000",
+                    "example": "00000000-0000-0000-0000-000000000000",
                     "type": "string"
                   },
                   "type": {
@@ -1625,13 +1627,15 @@
                   },
                   "modified_by": {
                     "description": "Relationship to user.",
+                    "nullable": true,
                     "properties": {
                       "data": {
                         "description": "Relationship to user object.",
+                        "nullable": true,
                         "properties": {
                           "id": {
                             "description": "A unique identifier that represents the user.",
-                            "example": "00000000-0000-0000-2345-000000000000",
+                            "example": "00000000-0000-0000-0000-000000000000",
                             "type": "string"
                           },
                           "type": {
@@ -2360,13 +2364,15 @@
                     },
                     "modified_by": {
                       "description": "Relationship to user.",
+                      "nullable": true,
                       "properties": {
                         "data": {
                           "description": "Relationship to user object.",
+                          "nullable": true,
                           "properties": {
                             "id": {
                               "description": "A unique identifier that represents the user.",
-                              "example": "00000000-0000-0000-2345-000000000000",
+                              "example": "00000000-0000-0000-0000-000000000000",
                               "type": "string"
                             },
                             "type": {
@@ -40664,13 +40670,15 @@
               },
               "modified_by": {
                 "description": "Relationship to user.",
+                "nullable": true,
                 "properties": {
                   "data": {
                     "description": "Relationship to user object.",
+                    "nullable": true,
                     "properties": {
                       "id": {
                         "description": "A unique identifier that represents the user.",
-                        "example": "00000000-0000-0000-2345-000000000000",
+                        "example": "00000000-0000-0000-0000-000000000000",
                         "type": "string"
                       },
                       "type": {
@@ -82183,13 +82191,15 @@
               },
               "modified_by": {
                 "description": "Relationship to user.",
+                "nullable": true,
                 "properties": {
                   "data": {
                     "description": "Relationship to user object.",
+                    "nullable": true,
                     "properties": {
                       "id": {
                         "description": "A unique identifier that represents the user.",
-                        "example": "00000000-0000-0000-2345-000000000000",
+                        "example": "00000000-0000-0000-0000-000000000000",
                         "type": "string"
                       },
                       "type": {
@@ -143566,13 +143576,15 @@
                               },
                               "modified_by": {
                                 "description": "Relationship to user.",
+                                "nullable": true,
                                 "properties": {
                                   "data": {
                                     "description": "Relationship to user object.",
+                                    "nullable": true,
                                     "properties": {
                                       "id": {
                                         "description": "A unique identifier that represents the user.",
-                                        "example": "00000000-0000-0000-2345-000000000000",
+                                        "example": "00000000-0000-0000-0000-000000000000",
                                         "type": "string"
                                       },
                                       "type": {
@@ -144132,13 +144144,15 @@
                             },
                             "modified_by": {
                               "description": "Relationship to user.",
+                              "nullable": true,
                               "properties": {
                                 "data": {
                                   "description": "Relationship to user object.",
+                                  "nullable": true,
                                   "properties": {
                                     "id": {
                                       "description": "A unique identifier that represents the user.",
-                                      "example": "00000000-0000-0000-2345-000000000000",
+                                      "example": "00000000-0000-0000-0000-000000000000",
                                       "type": "string"
                                     },
                                     "type": {
@@ -144767,13 +144781,15 @@
                             },
                             "modified_by": {
                               "description": "Relationship to user.",
+                              "nullable": true,
                               "properties": {
                                 "data": {
                                   "description": "Relationship to user object.",
+                                  "nullable": true,
                                   "properties": {
                                     "id": {
                                       "description": "A unique identifier that represents the user.",
-                                      "example": "00000000-0000-0000-2345-000000000000",
+                                      "example": "00000000-0000-0000-0000-000000000000",
                                       "type": "string"
                                     },
                                     "type": {
@@ -145326,13 +145342,15 @@
                             },
                             "modified_by": {
                               "description": "Relationship to user.",
+                              "nullable": true,
                               "properties": {
                                 "data": {
                                   "description": "Relationship to user object.",
+                                  "nullable": true,
                                   "properties": {
                                     "id": {
                                       "description": "A unique identifier that represents the user.",
-                                      "example": "00000000-0000-0000-2345-000000000000",
+                                      "example": "00000000-0000-0000-0000-000000000000",
                                       "type": "string"
                                     },
                                     "type": {
