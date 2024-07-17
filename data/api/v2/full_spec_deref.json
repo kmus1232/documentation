@@ -532,6 +532,15 @@
           "type": "string"
         }
       },
+      "InstanceId": {
+        "description": "The ID of the workflow instance.",
+        "in": "path",
+        "name": "instance_id",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      },
       "MetricID": {
         "description": "The name of the log-based metric.",
         "in": "path",
@@ -801,6 +810,15 @@
         "required": true,
         "schema": {
           "example": "00000000-0000-9999-0000-000000000000",
+          "type": "string"
+        }
+      },
+      "WorkflowId": {
+        "description": "The ID of the workflow.",
+        "in": "path",
+        "name": "workflow_id",
+        "required": true,
+        "schema": {
           "type": "string"
         }
       }
@@ -143232,6 +143250,90 @@
           "PAST_ONE_YEAR",
           "ALERT"
         ]
+      },
+      "WorkflowInstanceCreateMeta": {
+        "description": "Additional information for creating a workflow instance.",
+        "properties": {
+          "payload": {
+            "additionalProperties": {},
+            "description": "The input parameters to the workflow.",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
+      "WorkflowInstanceCreateRequest": {
+        "description": "Request used to create a workflow instance.",
+        "properties": {
+          "meta": {
+            "description": "Additional information for creating a workflow instance.",
+            "properties": {
+              "payload": {
+                "additionalProperties": {},
+                "description": "The input parameters to the workflow.",
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
+      "WorkflowInstanceCreateResponse": {
+        "description": "Response returned upon successful workflow instance creation.",
+        "properties": {
+          "data": {
+            "description": "Data about the created workflow instance.",
+            "properties": {
+              "id": {
+                "description": "The ID of the workflow execution. It can be used to fetch the execution status.",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
+      "WorkflowInstanceCreateResponseData": {
+        "description": "Data about the created workflow instance.",
+        "properties": {
+          "id": {
+            "description": "The ID of the workflow execution. It can be used to fetch the execution status.",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "WorkflowInstanceListItem": {
+        "additionalProperties": {},
+        "description": "An item in the workflow instances list.",
+        "type": "object"
+      },
+      "WorkflowListInstancesResponse": {
+        "description": "Response returned when listing workflow instances.",
+        "properties": {
+          "data": {
+            "description": "A list of workflow instances.",
+            "items": {
+              "additionalProperties": {},
+              "description": "An item in the workflow instances list.",
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "WorklflowCancelInstanceResponse": {
+        "additionalProperties": {},
+        "description": "Information about the canceled instance.",
+        "type": "object"
+      },
+      "WorklflowGetInstanceResponse": {
+        "additionalProperties": {},
+        "description": "The state of the given workflow instance.",
+        "type": "object"
       }
     },
     "securitySchemes": {
@@ -286238,6 +286340,600 @@
         }
       }
     },
+    "/api/v2/workflows/{workflow_id}/instances": {
+      "get": {
+        "description": "List all instances of a given workflow.",
+        "operationId": "ListWorkflowInstances",
+        "parameters": [
+          {
+            "description": "The ID of the workflow.",
+            "in": "path",
+            "name": "workflow_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Size for a given page. The maximum allowed value is 100.",
+            "in": "query",
+            "name": "page[size]",
+            "required": false,
+            "schema": {
+              "default": 10,
+              "example": 10,
+              "format": "int64",
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Specific page number to return.",
+            "in": "query",
+            "name": "page[number]",
+            "required": false,
+            "schema": {
+              "default": 0,
+              "example": 0,
+              "format": "int64",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "Response returned when listing workflow instances.",
+                  "properties": {
+                    "data": {
+                      "description": "A list of workflow instances.",
+                      "items": {
+                        "additionalProperties": {},
+                        "description": "An item in the workflow instances list.",
+                        "type": "object"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Too many requests"
+          }
+        },
+        "summary": "List workflow instances",
+        "tags": [
+          "Workflow Automation"
+        ],
+        "x-menu-order": 1,
+        "x-undo": {
+          "type": "safe"
+        }
+      },
+      "post": {
+        "description": "Execute the given workflow",
+        "operationId": "CreateWorkflowInstance",
+        "parameters": [
+          {
+            "description": "The ID of the workflow.",
+            "in": "path",
+            "name": "workflow_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "Request used to create a workflow instance.",
+                "properties": {
+                  "meta": {
+                    "description": "Additional information for creating a workflow instance.",
+                    "properties": {
+                      "payload": {
+                        "additionalProperties": {},
+                        "description": "The input parameters to the workflow.",
+                        "type": "object"
+                      }
+                    },
+                    "type": "object"
+                  }
+                },
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "Response returned upon successful workflow instance creation.",
+                  "properties": {
+                    "data": {
+                      "description": "Data about the created workflow instance.",
+                      "properties": {
+                        "id": {
+                          "description": "The ID of the workflow execution. It can be used to fetch the execution status.",
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Created"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Too many requests"
+          }
+        },
+        "summary": "Execute a workflow",
+        "tags": [
+          "Workflow Automation"
+        ],
+        "x-codegen-request-body-name": "body",
+        "x-menu-order": 2,
+        "x-undo": {
+          "operationId": "TODO",
+          "parameters": [],
+          "type": "unsafe"
+        }
+      }
+    },
+    "/api/v2/workflows/{workflow_id}/instances/{instance_id}": {
+      "get": {
+        "description": "Get a specific execution of a given workflow.",
+        "operationId": "GetWorkflowInstance",
+        "parameters": [
+          {
+            "description": "The ID of the workflow.",
+            "in": "path",
+            "name": "workflow_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The ID of the workflow instance.",
+            "in": "path",
+            "name": "instance_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {},
+                  "description": "The state of the given workflow instance.",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Too many requests"
+          }
+        },
+        "summary": "Get a workflow instance",
+        "tags": [
+          "Workflow Automation"
+        ],
+        "x-menu-order": 3,
+        "x-undo": {
+          "type": "safe"
+        }
+      }
+    },
+    "/api/v2/workflows/{workflow_id}/instances/{instance_id}/cancel": {
+      "put": {
+        "description": "Cancels a specific execution of a given workflow.",
+        "operationId": "CancelWorkflowInstance",
+        "parameters": [
+          {
+            "description": "The ID of the workflow.",
+            "in": "path",
+            "name": "workflow_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The ID of the workflow instance.",
+            "in": "path",
+            "name": "instance_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {},
+                  "description": "Information about the canceled instance.",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "API error response.",
+                  "properties": {
+                    "errors": {
+                      "description": "A list of errors.",
+                      "items": {
+                        "description": "A list of items.",
+                        "example": "Bad Request",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "errors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Too many requests"
+          }
+        },
+        "summary": "Cancel a workflow instance",
+        "tags": [
+          "Workflow Automation"
+        ],
+        "x-menu-order": 4,
+        "x-undo": {
+          "type": "safe"
+        }
+      }
+    },
     "x-merge-override": {
       "/api/v2/apicatalog/api": true,
       "/api/v2/apm/config/metrics": true,
@@ -286629,6 +287325,14 @@
         "url": "https://docs.datadoghq.com/account_management/users"
       },
       "name": "Users"
+    },
+    {
+      "description": "Automate your teams operational processes with Datadog Workflow Automation.",
+      "externalDocs": {
+        "description": "Find out more at",
+        "url": "https://docs.datadoghq.com/service_management/workflows/"
+      },
+      "name": "Workflow Automation"
     }
   ],
   "x-group-parameters": true
