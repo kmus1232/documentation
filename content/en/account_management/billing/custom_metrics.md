@@ -3,7 +3,7 @@ title: Custom Metrics Billing
 aliases:
     - /integrations/faq/what-standard-integrations-emit-custom-metrics/
 algolia:
-  tags: ['custom metrics billing']
+  tags: ['custom metrics billing']  
 ---
 
 If a metric is not submitted from one of the [more than {{< translate key="integration_count" >}} Datadog integrations][1] it's considered a [custom metric][2]. Certain standard integrations can also potentially emit custom metrics. For more information, see [Custom metrics and standard integrations][14].
